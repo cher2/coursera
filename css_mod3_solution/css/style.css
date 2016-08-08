@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+#company-brand {
+	color: #000000;
+	font-size: 2em;
+}
+
+#navbar-menu-items {
+	background-color: #FFFFFF; 
+}
+
+#navbar-menu-items > ul > li {
+	border-bottom: 1px solid #D3D3D3;
+}
+
+#navbar-menu-items > ul > li:last-child {
+	border-bottom: none;
+}
+
+#menu {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+h1 {
+	margin-bottom: 30px;
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+.menu-item {
+	background-color: #C0C0C0; 
+	border: 1px solid #D3D3D3;
+	height: 1000px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
