@@ -11,16 +11,17 @@ body {
 	font-size: 2em;
 }
 
-#navbar-menu-items {
+#navbar-menu-items > ul {
 	background-color: #FFFFFF; 
+	margin: 5px;
+	border-top: 1px solid #D3D3D3;
+	border-left: 1px solid #D3D3D3;
+	border-right: 1px solid #D3D3D3;
 }
 
 #navbar-menu-items > ul > li {
+	background-color: #FFFFFF; 
 	border-bottom: 1px solid #D3D3D3;
-}
-
-#navbar-menu-items > ul > li:last-child {
-	border-bottom: none;
 }
 
 #menu {
