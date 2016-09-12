@@ -4,6 +4,11 @@
 	padding: 3px;
 }
 
+/* initially the message is in an unknown status */
+.initMessage {
+	border-width: 0px;
+}
+
 .warningMessage {
 	border-color: #FA8072;
 	color: #FA8072;

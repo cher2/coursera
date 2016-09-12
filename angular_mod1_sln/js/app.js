@@ -8,7 +8,7 @@ LunchCheckerController.$inject = ['$scope'];
 function LunchCheckerController($scope) {
 	$scope.lunchItems = "";
 	$scope.message = "";
-	$scope.messageClass = "";
+	$scope.messageClass = "initMessage";
 
 	var emptyInputMsg = "Please enter data first";
 	var enjoyMsg = "Enjoy!";
