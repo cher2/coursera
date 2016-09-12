@@ -1,0 +1,15 @@
+.message {
+	border-style: solid;
+	border-width: 1px;
+	padding: 3px;
+}
+
+.warningMessage {
+	border-color: #FA8072;
+	color: #FA8072;
+}
+
+.infoMessage {
+	border-color: #228B22;
+	color: #228B22;
+}

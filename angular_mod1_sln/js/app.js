@@ -8,22 +8,29 @@ LunchCheckerController.$inject = ['$scope'];
 function LunchCheckerController($scope) {
 	$scope.lunchItems = "";
 	$scope.message = "";
+	$scope.messageClass = "";
 
 	var emptyInputMsg = "Please enter data first";
 	var enjoyMsg = "Enjoy!";
 	var tooMuchMsg = "Too much!";
+	var warningMsgClass = "warningMessage";
+	var infoMsgClass= "infoMessage";
 	var maxNumItemsToEnjoy = 3;
 
 	$scope.check = function() {
 		var numItems = getNumItems($scope.lunchItems);
 		if (numItems === 0) {
+			$scope.messageClass = warningMsgClass;
 			$scope.message = emptyInputMsg;
 		}
-		else if (numItems <= maxNumItemsToEnjoy) {
-			$scope.message = enjoyMsg;
-		}
 		else {
-			$scope.message = tooMuchMsg;
+			$scope.messageClass = infoMsgClass;
+			if (numItems <= maxNumItemsToEnjoy) {
+				$scope.message = enjoyMsg;
+			}
+			else {
+				$scope.message = tooMuchMsg;
+			}
 		}
 	};
 
