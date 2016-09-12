@@ -33,9 +33,6 @@ function LunchCheckerController($scope) {
 			}
 		}
 	};
-
-	// initialize the message
-	$scope.check();
 }
 
 function getNumItems(input) {
