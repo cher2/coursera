@@ -1,0 +1,15 @@
+<div class="clearfix"></div>
+<div ng-show="queryRst.queryError" class="alert alert-warning">
+	{{ queryRst.queryError }}
+</div>
+<div class="panel-group">
+	<div class="panel panel-info" ng-repeat="item in queryRst.foundItems">
+		<div class="panel-heading">
+			{{ item.name }} ({{ item.short_name }})
+		</div>
+		<div class="panel-body">
+			<p>{{ item.description }}</p>
+			<button class="btn btn-sm btn-warning" ng-click="queryRst.onRemove({ index: $index })">Don't want this one!</button>
+		</div>
+	</div>
+</div>
