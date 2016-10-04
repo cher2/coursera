@@ -1,0 +1,12 @@
+<div class="panel-group">
+	<div class="panel panel-info" ng-repeat="category in ctrl.categories">
+		<div class="panel-heading">
+			<a ui-sref="items({categoryShortName: category.short_name})">
+				{{ category.name }} ({{ category.short_name }})
+			</a>
+		</div>
+		<div ng-show="category.special_instructions" class="panel-body">
+			<p><small>{{ category.special_instructions }}</small></p>
+		</div>
+	</div>
+</div>
